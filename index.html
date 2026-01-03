@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="BRASA 23 — Burger & Brunch premium. Reservas por WhatsApp, menú destacado y ubicación." />
+  <title>BRASA 23 — Burger & Brunch</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top notice -->
+  <div class="topbar" role="note">
+    <div class="container topbar__inner">
+      <span class="pill">4.8★</span>
+      <span>Brunch + Smash Burgers · <strong>Reservas rápidas por WhatsApp</strong></span>
+      <a class="topbar__link" href="#promo">Promo semanal →</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand__mark">B23</span>
+        <span class="brand__name">BRASA <strong>23</strong></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#especialidades">Especialidades</a>
+        <a href="#menu">Menú</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--ghost" href="#menu">Ver menú</a>
+        <a class="btn btn--primary" id="ctaReserveTop" href="#">Reservar</a>
+
+        <button class="burger" id="burgerBtn" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer__content">
+        <a href="#especialidades" class="drawer__link">Especialidades</a>
+        <a href="#menu" class="drawer__link">Menú</a>
+        <a href="#promo" class="drawer__link">Promo</a>
+        <a href="#resenas" class="drawer__link">Reseñas</a>
+        <a href="#ubicacion" class="drawer__link">Ubicación</a>
+
+        <div class="drawer__cta">
+          <a class="btn btn--primary btn--full" id="ctaReserveMobile" href="#">Reservar por WhatsApp</a>
+          <a class="btn btn--ghost btn--full" href="#menu">Ver menú</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="kicker">Burger & Brunch premium</p>
+          <h1>Comida que se ve bien. <span class="accent">Sabe mejor.</span></h1>
+          <p class="lead">
+            Smash burgers jugosas, brunch de autor y café de especialidad. Reservá en 10 segundos.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" id="ctaReserveHero" href="#">Reservar por WhatsApp</a>
+            <a class="btn btn--ghost" href="#menu">Ver menú destacado</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__num">15 min</span>
+              <span class="stat__label">promedio de entrega</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">+1200</span>
+              <span class="stat__label">clientes felices</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">4.8★</span>
+              <span class="stat__label">reseñas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="hero__imgWrap">
+            <img src="assets/img/hero.jpg" alt="Burger premium y brunch en BRASA 23" loading="lazy" />
+          </div>
+          <div class="hero__cardBody">
+            <div class="badgeRow">
+              <span class="badge">Smash</span>
+              <span class="badge">Brunch</span>
+              <span class="badge">Café</span>
+            </div>
+            <p class="hero__cardTitle">Hoy recomendado</p>
+            <p class="hero__cardDesc">Combo “Brasa” + papas crocantes + bebida.</p>
+            <a class="link" href="#menu">Ver destacados →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialties -->
+    <section class="section" id="especialidades">
+      <div class="container">
+        <div class="section__head">
+          <h2>Especialidades</h2>
+          <p>3 líneas claras, visuales, y listas para vender en reels.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <div class="card__icon">🔥</div>
+            <h3>Smash burgers</h3>
+            <p>Carne sellada, bordes crocantes, queso real. Cero vueltas.</p>
+            <ul class="list">
+              <li>Pan brioche</li>
+              <li>Salsas caseras</li>
+              <li>Opciones dobles</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🥐</div>
+            <h3>Brunch de autor</h3>
+            <p>Lo dulce y lo salado, con estética que pega en Instagram.</p>
+            <ul class="list">
+              <li>Huevos + tostadas</li>
+              <li>Bowls</li>
+              <li>Pastelería</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">☕</div>
+            <h3>Café de especialidad</h3>
+            <p>Tu espresso “de verdad” y bebidas frías para verano.</p>
+            <ul class="list">
+              <li>Latte / Flat white</li>
+              <li>Cold brew</li>
+              <li>Postres</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <h2>Menú destacado</h2>
+          <p>Hecho para que el cliente decida rápido: fotos + precio + etiqueta.</p>
+        </div>
+
+        <div class="menuGrid">
+          <article class="menuItem">
+            <img src="assets/img/burger1.jpg" alt="Brasa Smash" loading="lazy" />
+            <div class="menuItem__body">
+              <div class="menuItem__top">
+                <h3>Brasa Smash</h3>
+                <span class="price">$ 390</span>
+              </div>
+              <p>Doble carne, cheddar, cebolla caramelizada, salsa brasa.</p>
+              <div class="tags">
+                <span class="tag">Top ventas</span>
+                <span class="tag">Doble</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menuItem">
+            <img src="assets/img/burger2.jpg" alt="Trufa 23" loading="lazy" />
+            <div class="menuItem__body">
+              <div class="menuItem__top">
+                <h3>Trufa 23</h3>
+                <span class="price">$ 450</span>
+              </div>
+              <p>Carne smash, provolone, mayo trufada, rúcula.</p>
+              <div class="tags">
+                <span class="tag">Premium</span>
+                <span class="tag">Provolone</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menuItem">
+            <img src="assets/img/brunch1.jpg" alt="Brunch completo" loading="lazy" />
+            <div class="menuItem__body">
+              <div class="menuItem__top">
+                <h3>Brunch Brasa</h3>
+                <span class="price">$ 520</span>
+              </div>
+              <p>Huevos, tostadas, palta, fruta, café o jugo.</p>
+              <div class="tags">
+                <span class="tag">Brunch</span>
+                <span class="tag">Combo</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menuItem">
+            <img src="assets/img/coffee1.jpg" alt="Cold brew" loading="lazy" />
+            <div class="menuItem__body">
+              <div class="menuItem__top">
+                <h3>Cold Brew</h3>
+                <span class="price">$ 210</span>
+              </div>
+              <p>Café frío suave, ideal para calor. Opcional leche.</p>
+              <div class="tags">
+                <span class="tag">Frío</span>
+                <span class="tag">Verano</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menuItem">
+            <img src="assets/img/dessert1.jpg" alt="Cheesecake" loading="lazy" />
+            <div class="menuItem__body">
+              <div class="menuItem__top">
+                <h3>Cheesecake</h3>
+                <span class="price">$ 260</span>
+              </div>
+              <p>Clásico cremoso con topping de frutos rojos.</p>
+              <div class="tags">
+                <span class="tag">Postre</span>
+                <span class="tag">Dulce</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menuItem menuItem--cta">
+            <div class="menuItem__cta">
+              <h3>¿Querés el menú completo?</h3>
+              <p>En proyectos reales esto sería un PDF, una página aparte o un menú interactivo.</p>
+              <div class="menuItem__ctaBtns">
+                <a class="btn btn--primary" id="ctaReserveMenu" href="#">Reservar</a>
+                <a class="btn btn--ghost" href="#ubicacion">Ver ubicación</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo -->
+    <section class="section promo" id="promo">
+      <div class="container promo__inner">
+        <div class="promo__copy">
+          <h2>Promo semanal</h2>
+          <p class="promo__lead">
+            <strong>Martes 2x1</strong> en Smash Clásica (hasta 22:30). Ideal para campañas con “cupo limitado”.
+          </p>
+          <div class="promo__badges">
+            <span class="pill">Solo salón</span>
+            <span class="pill">Cupo limitado</span>
+            <span class="pill">Reservas por WhatsApp</span>
+          </div>
+        </div>
+
+        <div class="promo__panel">
+          <p class="promo__panelTitle">Reservá con un mensaje</p>
+          <p class="promo__panelText">“Hola, quiero reservar para el martes 2x1. Somos ___.”</p>
+          <a class="btn btn--primary btn--full" id="ctaReservePromo" href="#">Abrir WhatsApp</a>
+          <p class="mini">Respuesta rápida + confirmación.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section" id="resenas">
+      <div class="container">
+        <div class="section__head">
+          <h2>Reseñas</h2>
+          <p>Esto sube confianza al toque (y te sirve para mostrar UX).</p>
+        </div>
+
+        <div class="grid3">
+          <article class="review">
+            <p class="review__stars">★★★★★</p>
+            <p>“La smash tiene ese borde crocante perfecto. Volvemos seguro.”</p>
+            <p class="review__name">— Valentina</p>
+          </article>
+
+          <article class="review">
+            <p class="review__stars">★★★★★</p>
+            <p>“Brunch completísimo y el café impecable. Atención rápida.”</p>
+            <p class="review__name">— Diego</p>
+          </article>
+
+          <article class="review">
+            <p class="review__stars">★★★★☆</p>
+            <p>“Se nota la calidad. La trufa 23 es otro nivel.”</p>
+            <p class="review__name">— Camila</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="section" id="ubicacion">
+      <div class="container">
+        <div class="section__head">
+          <h2>Ubicación & horarios</h2>
+          <p>Sumá Maps + horarios claros: menos fricción, más reservas.</p>
+        </div>
+
+        <div class="loc">
+          <div class="loc__card">
+            <img src="assets/img/place.jpg" alt="Local de BRASA 23" loading="lazy" />
+            <div class="loc__body">
+              <h3>BRASA 23 — Centro</h3>
+              <p class="muted">Av. Principal 1234, Montevideo</p>
+
+              <div class="hours">
+                <div class="hours__row"><span>Lun–Jue</span><span>12:00–15:30 · 19:00–23:30</span></div>
+                <div class="hours__row"><span>Vie–Sáb</span><span>12:00–16:00 · 19:00–00:30</span></div>
+                <div class="hours__row"><span>Dom</span><span>12:00–16:00 · 19:00–23:00</span></div>
+              </div>
+
+              <div class="loc__cta">
+                <a class="btn btn--primary" id="ctaReserveLocation" href="#">Reservar</a>
+                <a class="btn btn--ghost" id="ctaMaps" href="#" target="_blank" rel="noopener">Abrir en Google Maps</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="loc__map">
+            <iframe
+              title="Mapa de ubicación"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src=""
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <p class="footer__brand">BRASA <strong>23</strong></p>
+          <p class="muted">Proyecto ficticio demo · Hecho para mostrar desarrollo web y conversión.</p>
+        </div>
+
+        <div class="footer__right">
+          <a class="link" href="#inicio">Volver arriba</a>
+          <a class="link" href="#menu">Menú</a>
+          <a class="link" href="#ubicacion">Ubicación</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a class="wapp" id="wappFloat" href="#" aria-label="Abrir WhatsApp para reservar">
+      <span class="wapp__dot" aria-hidden="true"></span>
+      <span class="wapp__text">Reservar</span>
+    </a>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
