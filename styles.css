@@ -93,6 +93,20 @@ img{ max-width:100%; display:block; }
   gap:12px;
   text-decoration:none;
   color:var(--text);
+
+.brand__logo {
+  height: 80px;
+  width: 80px;              /* importante para que sea círculo */
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+
+  /* opcional pero queda MUY bien */
+  border: 1px solid rgba(52, 211, 255, 0.35);
+  background-color: #0b0f14;
+}
+
+
 }
 .brand__mark{
   width:42px;
@@ -587,3 +601,9 @@ img{ max-width:100%; display:block; }
 }
 
 .drawer.is-open{ display:block; }
+
+@media (max-width: 768px) {
+  .brand__logo {
+    height: 34px;
+  }
+}
